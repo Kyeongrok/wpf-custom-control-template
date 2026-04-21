@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "e3view",
+  "classifications": ["WPF", "CustomControl", "MVVM"],
+  "identity": "E3View.WpfCustomControl",
+  "name": "WPF Custom Control App",
+  "shortName": "wpf-cc",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "MyApp",
+  "preferNameDirectory": true
+}
