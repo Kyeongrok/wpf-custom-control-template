@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>WpfCustomControlTemplate</PackageId>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <Title>WPF Custom Control App Template</Title>
     <Authors>Kyeongrok</Authors>
     <Description>WPF project template with Support/Main/Forms structure and custom chrome window</Description>
