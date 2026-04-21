@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>WpfCustomControlTemplate</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Title>WPF Custom Control App Template</Title>
-    <Authors>e3view</Authors>
+    <Authors>Kyeongrok</Authors>
     <Description>WPF project template with Support/Main/Forms structure and custom chrome window</Description>
     <PackageTags>wpf;template;customcontrol;mvvm</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -14,6 +14,7 @@
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
     <NoDefaultExcludes>true</NoDefaultExcludes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,5 +27,9 @@
     <Content Include="content\**\*"
              Exclude="content\**\bin\**;content\**\obj\**" />
     <Compile Remove="**\*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath=""/>
   </ItemGroup>
 </Project>
