@@ -135,6 +135,7 @@
                                     VerticalAlignment="Center"
                                     Background="#0078D4"
                                     BorderThickness="0"
+                                    Command="{Binding ShowMessageCommand}"
                                     Content="Click Me"
                                     FontSize="14"
                                     Foreground="White">

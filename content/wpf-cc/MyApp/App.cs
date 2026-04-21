@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyApp.Forms;
 using MyApp.Forms.UI.Views;
+using MyApp.Forms.ViewModels;
 
 namespace MyApp;
 
@@ -38,6 +39,7 @@ public class App : Application
 
     private void ConfigureServices(IServiceCollection services)
     {
+        services.AddSingleton<MainWindowViewModel>();
         services.AddSingleton<MainWindow>();
     }
 }

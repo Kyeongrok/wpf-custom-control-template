@@ -1,5 +1,5 @@
-using System.Windows;
 using System.Windows.Controls;
+using MyApp.Forms.ViewModels;
 using MyApp.Support.UI.Units;
 
 namespace MyApp.Forms.UI.Views;
@@ -12,27 +12,28 @@ public class MainWindow : MyAppWindow
             new FrameworkPropertyMetadata(typeof(MainWindow)));
     }
 
+    public MainWindow(MainWindowViewModel viewModel)
+    {
+        DataContext = viewModel;
+    }
+
     public override void OnApplyTemplate()
     {
         base.OnApplyTemplate();
 
         var minimizeButton = GetTemplateChild("PART_MinimizeButton") as Button;
         if (minimizeButton != null)
-            minimizeButton.Click += (s, e) => WindowState = WindowState.Minimized;
+            minimizeButton.Click += (s, e) => WindowState = System.Windows.WindowState.Minimized;
 
         var maximizeButton = GetTemplateChild("PART_MaximizeButton") as Button;
         if (maximizeButton != null)
             maximizeButton.Click += (s, e) =>
-                WindowState = WindowState == WindowState.Maximized
-                    ? WindowState.Normal
-                    : WindowState.Maximized;
+                WindowState = WindowState == System.Windows.WindowState.Maximized
+                    ? System.Windows.WindowState.Normal
+                    : System.Windows.WindowState.Maximized;
 
         var closeButton = GetTemplateChild("PART_CloseButton") as Button;
         if (closeButton != null)
             closeButton.Click += (s, e) => Close();
-
-        var centerButton = GetTemplateChild("PART_CenterButton") as Button;
-        if (centerButton != null)
-            centerButton.Click += (s, e) => MessageBox.Show("Hello!", "MyApp");
     }
 }
