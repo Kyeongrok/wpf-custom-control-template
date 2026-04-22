@@ -1,3 +1,4 @@
+using System.Windows;
 using System.Windows.Controls;
 using MyApp.Forms.ViewModels;
 using MyApp.Support.UI.Units;
