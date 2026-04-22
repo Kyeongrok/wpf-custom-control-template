@@ -33,95 +33,11 @@
                                     Text="{TemplateBinding Title}" />
                                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
                                     <!--  Minimize  -->
-                                    <Button
-                                        x:Name="PART_MinimizeButton"
-                                        Width="46"
-                                        Height="40"
-                                        Background="Transparent"
-                                        BorderThickness="0"
-                                        Content="─"
-                                        FontSize="14"
-                                        Foreground="#CCCCCC"
-                                        WindowChrome.IsHitTestVisibleInChrome="True">
-                                        <Button.Style>
-                                            <Style TargetType="Button">
-                                                <Setter Property="Template">
-                                                    <Setter.Value>
-                                                        <ControlTemplate TargetType="Button">
-                                                            <Border Background="{TemplateBinding Background}">
-                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                                            </Border>
-                                                        </ControlTemplate>
-                                                    </Setter.Value>
-                                                </Setter>
-                                                <Style.Triggers>
-                                                    <Trigger Property="IsMouseOver" Value="True">
-                                                        <Setter Property="Background" Value="#3C3C3C" />
-                                                    </Trigger>
-                                                </Style.Triggers>
-                                            </Style>
-                                        </Button.Style>
-                                    </Button>
+                                    <support:MinimizeButton x:Name="PART_MinimizeButton" />
                                     <!--  Maximize  -->
-                                    <Button
-                                        x:Name="PART_MaximizeButton"
-                                        Width="46"
-                                        Height="40"
-                                        Background="Transparent"
-                                        BorderThickness="0"
-                                        Content="⬜"
-                                        FontSize="11"
-                                        Foreground="#CCCCCC"
-                                        WindowChrome.IsHitTestVisibleInChrome="True">
-                                        <Button.Style>
-                                            <Style TargetType="Button">
-                                                <Setter Property="Template">
-                                                    <Setter.Value>
-                                                        <ControlTemplate TargetType="Button">
-                                                            <Border Background="{TemplateBinding Background}">
-                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                                            </Border>
-                                                        </ControlTemplate>
-                                                    </Setter.Value>
-                                                </Setter>
-                                                <Style.Triggers>
-                                                    <Trigger Property="IsMouseOver" Value="True">
-                                                        <Setter Property="Background" Value="#3C3C3C" />
-                                                    </Trigger>
-                                                </Style.Triggers>
-                                            </Style>
-                                        </Button.Style>
-                                    </Button>
+                                    <support:MaximizeButton x:Name="PART_MaximizeButton" />
                                     <!--  Close  -->
-                                    <Button
-                                        x:Name="PART_CloseButton"
-                                        Width="46"
-                                        Height="40"
-                                        Background="Transparent"
-                                        BorderThickness="0"
-                                        Content="✕"
-                                        FontSize="14"
-                                        Foreground="#CCCCCC"
-                                        WindowChrome.IsHitTestVisibleInChrome="True">
-                                        <Button.Style>
-                                            <Style TargetType="Button">
-                                                <Setter Property="Template">
-                                                    <Setter.Value>
-                                                        <ControlTemplate TargetType="Button">
-                                                            <Border Background="{TemplateBinding Background}">
-                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                                            </Border>
-                                                        </ControlTemplate>
-                                                    </Setter.Value>
-                                                </Setter>
-                                                <Style.Triggers>
-                                                    <Trigger Property="IsMouseOver" Value="True">
-                                                        <Setter Property="Background" Value="#C42B1C" />
-                                                    </Trigger>
-                                                </Style.Triggers>
-                                            </Style>
-                                        </Button.Style>
-                                    </Button>
+                                    <support:CloseButton x:Name="PART_CloseButton" />
                                 </StackPanel>
                             </Grid>
 

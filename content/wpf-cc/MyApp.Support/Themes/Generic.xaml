@@ -1,5 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/MyApp.Support;component/Themes/Units/MyAppWindow.xaml" />
+        <ResourceDictionary Source="/MyApp.Support;component/Themes/Units/MinimizeButton.xaml" />
+        <ResourceDictionary Source="/MyApp.Support;component/Themes/Units/MaximizeButton.xaml" />
+        <ResourceDictionary Source="/MyApp.Support;component/Themes/Units/CloseButton.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
